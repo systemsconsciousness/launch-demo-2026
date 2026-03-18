@@ -14,13 +14,13 @@ export function getSiteUrl(): URL {
   }
 }
 
-export const SITE_NAME = 'Contentstack Cloud Engine'
+export const SITE_NAME = 'Contentstack Launch'
 export const SITE_TAGLINE = 'Hello Composable.'
 
 export const SEO_DESCRIPTION =
   'Your deployment is live on Contentstack Launch—high-performance frontend hosting built for composable architectures. Ship faster with the Launch API & edge-ready workflows.'
 
-export const SEO_TITLE = 'Contentstack | Cloud Engine'
+export const SEO_TITLE = 'Contentstack | Launch'
 
 export const SEO_KEYWORDS = [
   'Contentstack',

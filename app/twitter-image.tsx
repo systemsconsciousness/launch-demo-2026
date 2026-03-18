@@ -3,8 +3,7 @@ import { OgCard } from '@/lib/og-card'
 
 export const runtime = 'edge'
 
-export const alt =
-  'Contentstack Cloud Engine — Hello Composable. Powered by Contentstack Launch.'
+export const alt = 'Contentstack Launch — Hello Composable.'
 
 export const size = {
   width: 1200,

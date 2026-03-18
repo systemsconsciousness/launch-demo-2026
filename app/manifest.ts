@@ -4,7 +4,7 @@ import { SITE_NAME, SEO_DESCRIPTION } from '@/lib/site-config'
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: SITE_NAME,
-    short_name: 'Cloud Engine',
+    short_name: 'Launch',
     description: SEO_DESCRIPTION,
     start_url: '/',
     display: 'standalone',

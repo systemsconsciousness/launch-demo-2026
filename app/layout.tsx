@@ -58,7 +58,7 @@ export const metadata: Metadata = {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Contentstack Cloud Engine — Hello Composable. Powered by Contentstack Launch.',
+        alt: 'Contentstack Launch — Hello Composable.',
         type: 'image/png',
       },
     ],
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
       url: '/twitter-image',
       width: 1200,
       height: 630,
-      alt: 'Contentstack Cloud Engine — Hello Composable. Powered by Contentstack Launch.',
+      alt: 'Contentstack Launch — Hello Composable.',
     },
   },
   robots: {
