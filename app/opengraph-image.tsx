@@ -1,0 +1,20 @@
+import { ImageResponse } from 'next/og'
+import { OgCard } from '@/lib/og-card'
+
+export const runtime = 'edge'
+
+export const alt =
+  'Contentstack Cloud Engine — Hello Composable. Powered by Contentstack Launch.'
+
+export const size = {
+  width: 1200,
+  height: 630,
+}
+
+export const contentType = 'image/png'
+
+export default function OpenGraphImage() {
+  return new ImageResponse(<OgCard />, {
+    ...size,
+  })
+}
