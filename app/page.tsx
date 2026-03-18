@@ -118,7 +118,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-14 flex flex-col sm:flex-row items-center gap-6">
+        <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row items-center gap-6">
           <a
             href="https://www.contentstack.com/docs/developers/apis/launch-api"
             target="_blank"
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="w-full flex justify-center pb-12 pt-16">
+      <footer className="w-full flex justify-center pb-12 pt-24 md:pt-28">
         <div className="glass rounded-full px-8 py-3.5 flex items-center gap-4 transition-all duration-500 hover:bg-white/10 hover:border-white/20 group">
           <a
             href="https://www.contentstack.com"
