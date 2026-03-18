@@ -15,6 +15,15 @@ const inter = Inter({
   variable: '--font-inter',
   display: 'swap',
   adjustFontFallback: true,
+  preload: true,
+  fallback: [
+    'ui-sans-serif',
+    'system-ui',
+    '-apple-system',
+    'BlinkMacSystemFont',
+    'Segoe UI',
+    'sans-serif',
+  ],
 })
 
 const siteUrl = getSiteUrl()

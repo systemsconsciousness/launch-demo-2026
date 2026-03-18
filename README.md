@@ -50,3 +50,9 @@ Also exposed: **`/robots.txt`**, **`/sitemap.xml`**, **`/manifest.webmanifest`**
 - **Modern `browserslist`** — Fewer legacy polyfills in the client bundle.
 
 Re‑run Lighthouse after deploy; scores can still vary with TTFB and caching.
+
+### Mobile PageSpeed (97 → target 100)
+
+- **`experimental.inlineCss`** — Inlines styles in HTML so there is no render‑blocking `.css` request (fixes the ~300 ms CSS chain on mobile).
+- **Stricter `browserslist` (production only)** — Drops unnecessary polyfills (`Array.at`, `flat`, `Object.hasOwn`, etc.) and trims parse time on the main chunk. Targets Chrome/Edge/Firefox **115+**, **Android Chrome 115+**, Safari/iOS **17+**. Widen the list if you must support older devices.
+- **Inter** — Explicit `fallback` stack + `adjustFontFallback` + `preload` so the headline can use metrics‑matched fallback while the font loads.

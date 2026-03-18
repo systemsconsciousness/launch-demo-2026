@@ -5,8 +5,13 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const nextConfig: NextConfig = {
-  // Avoid picking a parent folder lockfile as workspace root
   outputFileTracingRoot: __dirname,
+  poweredByHeader: false,
+  compress: true,
+  experimental: {
+    // Inlines app CSS into <style> — removes render-blocking CSS link (major mobile PSI win)
+    inlineCss: true,
+  },
 }
 
 export default nextConfig
