@@ -1,7 +1,23 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next
+.next
+out
+
+# nuxt (legacy)
 .nuxt
 .output
-node_modules
+
+# misc
 dist
 *.log
 .env
 .env.*
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*

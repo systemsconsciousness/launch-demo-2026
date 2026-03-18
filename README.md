@@ -1,6 +1,6 @@
-# Contentstack Cloud Engine — Nuxt demo
+# Contentstack Cloud Engine — Next.js
 
-Single-page Nuxt 3 app matching the Launch deployment success screen.
+Single-page Next.js (App Router) app: Launch deployment success screen.
 
 ## Setup
 
@@ -20,11 +20,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ```bash
 npm run build
-npm run preview
+npm start
 ```
 
-Static export:
-
-```bash
-npm run generate
-```
+Static export (optional): add `output: 'export'` to `next.config.ts`, then `npm run build` — output in `out/`.
