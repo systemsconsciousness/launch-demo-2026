@@ -1,3 +1,5 @@
+import { RocketMark } from '@/components/rocket-mark'
+
 const MANDALA_PETALS = [
   0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330,
 ]
@@ -22,7 +24,8 @@ export default function Home() {
                 r="90"
                 fill="none"
                 stroke="var(--cs-purple)"
-                className="layer-pulse"
+                strokeWidth="0.35"
+                strokeOpacity={0.45}
                 strokeDasharray="0.5 2"
               />
               <circle
@@ -83,16 +86,17 @@ export default function Home() {
       <div className="h-12" />
 
       <main className="relative flex flex-col items-center text-center justify-center flex-1 max-w-4xl w-full">
-        <div className="mb-8 relative group">
-          <div className="absolute -inset-16 bg-[#AC75FF]/20 blur-[60px] rounded-full opacity-50" />
-          <span
-            className="material-symbols-outlined text-[160px] md:text-[200px] text-[#AC75FF] rocket-float select-none cursor-default"
-            style={{
-              fontVariationSettings: "'FILL' 1, 'wght' 200",
-            }}
+        <div
+          className="mb-8 relative isolate mx-auto flex w-full max-w-[280px] min-h-[200px] shrink-0 items-center justify-center md:max-w-[320px] md:min-h-[240px]"
+          style={{ contain: 'layout style' }}
+        >
+          <div
+            className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden rounded-full"
+            aria-hidden
           >
-            rocket_launch
-          </span>
+            <div className="h-40 w-40 scale-[1.35] rounded-full bg-[#AC75FF]/20 blur-[50px] opacity-50 md:h-52 md:w-52 md:scale-[1.4] md:blur-[60px]" />
+          </div>
+          <RocketMark className="rocket-float relative z-10 h-[160px] w-[160px] shrink-0 select-none md:h-[200px] md:w-[200px]" />
         </div>
 
         <div className="space-y-6">

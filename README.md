@@ -40,3 +40,13 @@ Static export (optional): add `output: 'export'` to `next.config.ts`, then `npm 
 5. **Structured data** — `components/json-ld.tsx` emits **WebSite** + **WebPage** + **SoftwareApplication** JSON-LD for search engines.
 
 Also exposed: **`/robots.txt`**, **`/sitemap.xml`**, **`/manifest.webmanifest`**.
+
+## Performance (PageSpeed / Lighthouse)
+
+- **No Material Symbols font** — The hero rocket is an **inline SVG** (same glyph as the favicon) so the page avoids the multi‑MB Google Fonts icon file and render‑blocking `fonts.googleapis.com` CSS.
+- **Inter variable font** — One self‑hosted file via `next/font` + `adjustFontFallback` to limit layout shift.
+- **Stable LCP region** — Fixed min dimensions on the rocket block; glow is contained (no `-inset-*` bleed) to reduce CLS.
+- **Compositor‑friendly motion** — Removed `background-position` “shine” on the headline and non‑composited SVG stroke pulsing; rocket float uses **transform + `will-change`** only.
+- **Modern `browserslist`** — Fewer legacy polyfills in the client bundle.
+
+Re‑run Lighthouse after deploy; scores can still vary with TTFB and caching.

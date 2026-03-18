@@ -12,8 +12,9 @@ import './globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '800'],
+  variable: '--font-inter',
   display: 'swap',
+  adjustFontFallback: true,
 })
 
 const siteUrl = getSiteUrl()
@@ -110,7 +111,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} font-sans antialiased`}>
         <JsonLd />
         {children}
       </body>
