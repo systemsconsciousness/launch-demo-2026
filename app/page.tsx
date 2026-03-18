@@ -190,7 +190,7 @@ export default function Home() {
           <div className="h-5 w-[1px] bg-white/20 mx-1 shrink-0" />
 
           <a
-            href="https://github.com/systemsconsciousness/launch-demo-2026"
+            href="https://github.com/dean-cstk/launch-demo-2026"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 no-underline hover:opacity-70 transition-opacity"
